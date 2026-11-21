@@ -9,7 +9,7 @@ var Version = "dev"
 
 func PrintHelp() {
 	fmt.Println("\033[1m+------------------------+\033[0m")
-	fmt.Println("\033[1m|       KProbe CLI       |\033[0m")
+	fmt.Println("\033[1m|      K-Probe CLI       |\033[0m")
 	fmt.Println("\033[1m+------------------------+\033[0m")
 
 	fmt.Println("\033[1mRepository:\033[0m https://github.com/K-cermak/KProbe")

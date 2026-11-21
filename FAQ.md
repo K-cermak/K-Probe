@@ -12,7 +12,7 @@
 
 ## Installation
 - **System Requirements**: We recommend a dedicated virtual machine (VM) or physical server. The requirements are minimal: **1 GB RAM**, **1 CPU core** and **1 GB of free disk space** for the SQLite database (more may be needed if you run many scans or keep a long history).
-- **Supported Operating Systems**: KProbe is compatible with any modern Linux distribution using **systemd** (`systemctl`). Native packages are available for:
+- **Supported Operating Systems**: K-Probe is compatible with any modern Linux distribution using **systemd** (`systemctl`). Native packages are available for:
   - **Debian / Ubuntu** (and derivatives) via `.deb` packages.
   - **CentOS / RHEL / Rocky Linux / Fedora** (and derivatives) via `.rpm` packages.
 
@@ -34,7 +34,7 @@
   ```
 
 > [!NOTE]
-> KProbe is installed to `/opt/kprobe`. The dedicated API server runs as a systemd service (`kprobe.service`) and is configured to start automatically on system boot.
+> K-Probe is installed to `/opt/kprobe`. The dedicated API server runs as a systemd service (`kprobe.service`) and is configured to start automatically on system boot.
 
 - <b>2. Verify That the Service Is Running</b>
   - The database is initialized automatically during installation. To check that the API service is running, use:
@@ -53,7 +53,7 @@
 
 - The editor is straightforward to use – all the necessary information is provided within it. To download the configuration file, click **"Download Config"** (the values are verified first). To edit an existing configuration file, click **"Load Config"**.
 
-<img src="https://cdn.karlosoft.com/cdn-data/ks/img/kprobe/editor2.png" width="700" alt="KProbe Editor">
+<img src="https://cdn.karlosoft.com/cdn-data/ks/img/kprobe/editor2.png" width="700" alt="K-Probe Editor">
 
 
 
@@ -61,7 +61,7 @@
 <br>
 
 ## Creating a Scan, Setting Up Cron
-- After exporting the configuration file from the editor, load it into KProbe with this command:
+- After exporting the configuration file from the editor, load it into K-Probe with this command:
 ```
 kprobe config replace <path_to_config_file>
 ```
@@ -72,7 +72,7 @@ kprobe config verify <path_to_config_file>
 ```
 
 > [!NOTE]
-> The configuration is copied into the database, so KProbe does not need the original file. You can safely delete it after loading.
+> The configuration is copied into the database, so K-Probe does not need the original file. You can safely delete it after loading.
 
 
 <br>
@@ -137,13 +137,13 @@ sudo kprobe api restart
 <br>
 
 ## Integration with Uptime Kuma
-- KProbe provides a standard JSON endpoint for each scan, so it is easy to connect to external monitoring dashboards and notification tools.
-- To integrate KProbe with **Uptime Kuma**, create a new monitor with these settings:
+- K-Probe provides a standard JSON endpoint for each scan, so it is easy to connect to external monitoring dashboards and notification tools.
+- To integrate K-Probe with **Uptime Kuma**, create a new monitor with these settings:
     - <b>Type:</b> HTTP(s) - Keyword
     - <b>URL:</b> `http://YOUR_SERVER_IP/status/<scan_name>`
     - <b>Keyword:</b> `"status":"true"`
 
-- Uptime Kuma will then query the KProbe API at regular intervals and send notifications whenever a scan fails.
+- Uptime Kuma will then query the K-Probe API at regular intervals and send notifications whenever a scan fails.
 
 <br>
 <br>
@@ -276,7 +276,7 @@ kprobe help
 <br>
 
 ## Uninstallation
-- To remove KProbe, run the command for your package manager:
+- To remove K-Probe, run the command for your package manager:
 
   **On Debian/Ubuntu-based systems:**
   ```bash
@@ -300,8 +300,8 @@ kprobe help
 
 ## Migration
 
-### From Uptime Kuma Probe Extension (1.0.X) to KProbe (2.0.0)
-KProbe does not include an automatic migration tool, so the configuration has to be migrated manually:
+### From Uptime Kuma Probe Extension (1.0.X) to K-Probe (2.0.0)
+K-Probe does not include an automatic migration tool, so the configuration has to be migrated manually:
 
 1. **Uninstall the legacy application**: Run the uninstall script from the legacy repository to remove the old version:
    ```bash
@@ -310,10 +310,10 @@ KProbe does not include an automatic migration tool, so the configuration has to
    rm uninstall.sh
    sudo rm -rf /opt/kprobe
    ```
-2. **Install KProbe**: Download and install the new package (`.deb` or `.rpm`) following the [Installation](#installation) guide.
+2. **Install K-Probe**: Download and install the new package (`.deb` or `.rpm`) following the [Installation](#installation) guide.
 3. **Upgrade your configuration**: Load your old configuration file into the new configuration editor, or recreate your scans there. The configuration format has changed – for example, the keyword system has been replaced by the new Variables + Expressions engine. The editor converts legacy `keyword` parameters automatically.
 4. **Download the new configuration**: Verify your values in the editor and click **Download Config**.
-5. **Apply the configuration**: Load your new configuration file into KProbe:
+5. **Apply the configuration**: Load your new configuration file into K-Probe:
    ```bash
    kprobe config replace <path_to_new_config_file>
    ```

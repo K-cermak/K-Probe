@@ -1,5 +1,5 @@
 [Unit]
-Description=KProbe API Server
+Description=K-Probe API Server
 After=network.target
 
 [Service]
