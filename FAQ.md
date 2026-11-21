@@ -53,7 +53,7 @@
 
 - The editor is straightforward to use – all the necessary information is provided within it. To download the configuration file, click **"Download Config"** (the values are verified first). To edit an existing configuration file, click **"Load Config"**.
 
-<img src="https://cdn.karlosoft.com/cdn-data/ks/img/kprobe/editor2.png" width="700" alt="K-Probe Editor">
+<img src="https://cdn.karlosoft.com/cdn-data/ks/img/kprobe/editor.png" width="700" alt="K-Probe Editor">
 
 
 

@@ -2,7 +2,7 @@
 
 By Karel Čermák | [Karlosoft](https://karlosoft.com).
 
-<img src="https://cdn.karlosoft.com/cdn-data/ks/img/kprobe/github2.png" width="700" alt="K-Probe">
+<img src="https://cdn.karlosoft.com/cdn-data/ks/img/kprobe/github.png" width="700" alt="K-Probe">
 
 ## What is K-Probe?
 - **K-Probe is a lightweight, standalone monitoring system designed to run locally inside your network.**
