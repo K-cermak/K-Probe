@@ -1,11 +1,21 @@
-# KProbe
+<p align="center">
+    <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://cdn.karlosoft.com/cdn-data/ks/img/kprobe/logo.svg">
+        <source media="(prefers-color-scheme: light)" srcset="https://cdn.karlosoft.com/cdn-data/ks/img/kprobe/logo-dark.svg">
+        <img alt="Enplated Email" src="https://cdn.karlosoft.com/cdn-data/ks/img/kprobe/logo-dark.svg" width="700">
+    </picture>
+    <br>
+    <strong>Lightweight self-hosted probe for monitoring devices in your local network.</strong>
+    <br>
+    <br>
+    <br>
+    <br>
+    <img src="https://cdn.karlosoft.com/cdn-data/ks/img/kprobe/github.png" width="700" alt="K-Probe">
+</p>
 
-By Karel Čermák | [Karlosoft](https://karlosoft.com).
 
-<img src="https://cdn.karlosoft.com/cdn-data/ks/img/kprobe/github2.png" width="700" alt="KProbe">
-
-## What is KProbe?
-- **KProbe is a lightweight, standalone monitoring system designed to run locally inside your network.**
+## What is K-Probe?
+- **K-Probe is a lightweight, standalone monitoring system designed to run locally inside your network.**
 - It actively checks local devices – such as Wi-Fi access points, IP cameras, printers, and internal servers – using ping (ICMP) and HTTP requests.
 - The status of these checks is exposed through a clean **HTTP API**, allowing you to easily integrate it with external monitoring dashboards like Uptime Kuma, Zabbix, or any custom tool of your choice.
 - It is designed to be self-contained, easy to deploy, and runs completely independently on your local machine or server.
@@ -14,9 +24,9 @@ By Karel Čermák | [Karlosoft](https://karlosoft.com).
 
 ## How Does It Work?
 1. **Deploy**: Set up a small local server or VM running Linux (Ubuntu, Debian, CentOS, RHEL, Rocky Linux, or Fedora).
-2. **Install**: Install KProbe using our native `.deb` or `.rpm` packages as detailed in [FAQ.md](FAQ.md).
+2. **Install**: Install K-Probe using our native `.deb` or `.rpm` packages as detailed in [FAQ.md](FAQ.md).
 3. **Configure**: Define the local devices and services you want to monitor.
-4. **Integrate**: Point your favorite monitoring system (e.g., Uptime Kuma) to the KProbe API endpoint. 
+4. **Integrate**: Point your favorite monitoring system (e.g., Uptime Kuma) to the K-Probe API endpoint. 
    - The API provides straightforward JSON responses showing the status of each scan, allowing you to monitor internal networks securely without exposing them directly to the internet.
 
 <br>
@@ -34,7 +44,7 @@ By Karel Čermák | [Karlosoft](https://karlosoft.com).
 - Absolutely. The HTTP API is fully standalone, meaning you can query scan statuses directly, integrate them into your own dashboards, or write simple scripts to process the results.
 
 - Please note:
-    - KProbe is focused entirely on local execution and state reporting; it does **not** send notifications.
+    - K-Probe is focused entirely on local execution and state reporting; it does **not** send notifications.
     - There are no plans to add alerting features, as it is intended to feed status data to systems that already handle notifications.
 
 <br>
@@ -47,4 +57,4 @@ By Karel Čermák | [Karlosoft](https://karlosoft.com).
 
 ---
 
-#### KProbe is an independent open-source project developed by Karel Cermak (info@karlosoft.com). It is not affiliated with Uptime Kuma, Zabbix, or any other monitoring platform.
+#### K-Probe is an independent open-source project developed by Karel Cermak (info@karlosoft.com). It is not affiliated with Uptime Kuma, Zabbix, or any other monitoring platform.

@@ -1,4 +1,4 @@
-## KProbe is available under the MIT License
+## K-Probe is available under the MIT License
 
 You can use, modify and distribute it free of charge. However, the author provides no warranty and accepts no liability of any kind.
 
