@@ -2,7 +2,7 @@
     <picture>
         <source media="(prefers-color-scheme: dark)" srcset="https://cdn.karlosoft.com/cdn-data/ks/img/kprobe/logo.svg">
         <source media="(prefers-color-scheme: light)" srcset="https://cdn.karlosoft.com/cdn-data/ks/img/kprobe/logo-dark.svg">
-        <img alt="Enplated Email" src="https://cdn.karlosoft.com/cdn-data/ks/img/kprobe/logo-dark.svg" width="700">
+        <img alt="K-Probe" src="https://cdn.karlosoft.com/cdn-data/ks/img/kprobe/logo-dark.svg" width="700">
     </picture>
     <br>
     <strong>Lightweight self-hosted probe for monitoring devices in your local network.</strong>
@@ -10,7 +10,7 @@
     <br>
     <br>
     <br>
-    <img src="https://cdn.karlosoft.com/cdn-data/ks/img/kprobe/github.png" width="700" alt="K-Probe">
+    <img src="https://cdn.karlosoft.com/cdn-data/ks/img/kprobe/github.png" width="700" alt="K-Probe showcase">
 </p>
 
 
