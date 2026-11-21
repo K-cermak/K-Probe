@@ -1,6 +1,6 @@
 # K-Probe
 
-By Karel Cermak | [Karlosoft](https://karlosoft.com).
+By Karel Čermák | [Karlosoft](https://karlosoft.com).
 
 <img src="https://cdn.karlosoft.com/cdn-data/ks/img/kprobe/github2.png" width="700" alt="K-Probe">
 
