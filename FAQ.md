@@ -19,7 +19,7 @@
 <br>
 
 - <b>1. Download and Install the Package</b>
-  - Get the latest package for your architecture from the GitHub [Releases](https://github.com/K-cermak/KProbe/releases) page.
+  - Get the latest package for your architecture from the GitHub [Releases](https://github.com/K-cermak/K-Probe/releases) page.
   
   **On Debian/Ubuntu-based systems (.deb):**
   ```bash
@@ -46,7 +46,7 @@
 <br>
 
 ## Editor
-- Use the editor to create a scan configuration. The editor is available [here](https://github.com/K-cermak/KProbe/tree/main/web-editor) (download the folder and open `index.html` in your browser).
+- Use the editor to create a scan configuration. The editor is available [here](https://github.com/K-cermak/K-Probe/tree/main/web-editor) (download the folder and open `index.html` in your browser).
 
 > [!NOTE]
 > You can also access the editor at `http://YOUR_SERVER_IP/editor`.

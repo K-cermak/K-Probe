@@ -12,7 +12,7 @@ func PrintHelp() {
 	fmt.Println("\033[1m|      K-Probe CLI       |\033[0m")
 	fmt.Println("\033[1m+------------------------+\033[0m")
 
-	fmt.Println("\033[1mRepository:\033[0m https://github.com/K-cermak/KProbe")
+	fmt.Println("\033[1mRepository:\033[0m https://github.com/K-cermak/K-Probe")
 	fmt.Println("\033[1mLicense:\033[0m MIT")
 	fmt.Println("\033[1mAuthor:\033[0m Karel Cermak | karlosoft.com")
 	fmt.Printf("\033[1mVersion:\033[0m %s, © %d\n", Version, time.Now().Year())
