@@ -1,8 +1,18 @@
-# K-Probe
+<p align="center">
+    <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://cdn.karlosoft.com/cdn-data/ks/img/kprobe/logo.svg">
+        <source media="(prefers-color-scheme: light)" srcset="https://cdn.karlosoft.com/cdn-data/ks/img/kprobe/logo-dark.svg">
+        <img alt="Enplated Email" src="https://cdn.karlosoft.com/cdn-data/ks/img/kprobe/logo-dark.svg" width="700">
+    </picture>
+    <br>
+    <strong>Lightweight self-hosted probe for monitoring devices in your local network.</strong>
+    <br>
+    <br>
+    <br>
+    <br>
+    <img src="https://cdn.karlosoft.com/cdn-data/ks/img/kprobe/github.png" width="700" alt="K-Probe">
+</p>
 
-By Karel Čermák | [Karlosoft](https://karlosoft.com).
-
-<img src="https://cdn.karlosoft.com/cdn-data/ks/img/kprobe/github.png" width="700" alt="K-Probe">
 
 ## What is K-Probe?
 - **K-Probe is a lightweight, standalone monitoring system designed to run locally inside your network.**
